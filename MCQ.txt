@@ -1,0 +1,533 @@
+
+MCQ UiPath
+
+SUNDAY, OCTOBER 7, 2018
+Orchestrator Level 2 MCQ (UiPath)
+
+1.What are the statuses that can be set manually for the transactions that failed due to an application exception?
+a). In Review
+b). Retry
+c).Verified
+2.Where can you check whether a job was scheduled or manually started?
+a). Go to the Jobs page and check the Source Column.
+3.How can a job be initialized using Orchestrator ?
+a).Manually, from the Jobs page
+b). At specific times, using Schedules
+4. What filter type are available for job?
+a).State
+5.Select only the specifications that are mandatory when deploying a process?
+a).The Environment
+b).The Package Version
+c).The Package Name
+6.What is Orchestrator used for?
+a).Remotely controlling any number of robots and performing workflow management
+7.Which of following data types can be stored as Assets?
+a)Integer
+b).String
+c)Boolean
+d)Credential
+8.Which options and actions can be triggered on the Packages page?
+a).View all published packages
+b).Delete package versions
+c).Add a new package manually
+9.What happens if a new job is triggered while the robot it is assigned to is executing a different process?
+a).The new job is left in a ‘Pending’ state until the robot finishes executing the process. The new job is executed as soon as the robot becomes available
+10.The schedule 'stop after ' option refer to:
+a). The amount of time until the schedule process will be canceled? terminate.
+11.which option can be used to stop a running process?
+a)Stop
+b).Kill
+12.which of the steps below are required in order to establish a connection between a robot and orchestrator?
+a).Provisioning the robot in Orchestrator.
+b).Configuring the robot on the local machine using the orchestrator URL and Robot Key.
+13.Is it possible to reprocess a transaction in a Queue after its failure due to an application exception?
+a).Yes, if the Auto-Retry property of the Queue is enabled
+b).Yes, it can be retried manually on the Transactions page
+14.Can we set up a reviewer for the Failed Transactions?
+a)YES
+15.A Robot is executing a workflow that uses the “Log Message” activity, with ‘Info’ level specified. If the log level of the Robot is set to ‘Error’, will the Info log appear on the Orchestrator Log page?
+a).No, only the log messages of type ‘Error’ and ‘Critical’ will be displayed on the Orchestrator Log page
+16.Is it possible to check whether a Robot that is connected to Orchestrator is available or not in real time?
+a).Yes, this is possible through the Heartbeat mechanism; the status of each robot is updated on the Robots page
+17.How can the processes in a schedule be assigned to the robots in a specific environment?
+a).Processes can run on all the robots in an environment
+b).Processes can run on specific robots in an environment, depending on the user's choice.
+c).Processes can run on a specific number of robots, depending on the user's choice
+18.How are Robot Keys generated?
+a).Orchestrator generates unique Robot Keys during the robot provisioning process
+19. Which Studio activity is linked with the Stop command in Orchestrator?
+a).The should stop Activity.
+20.What happens if an active package version in Orchestrator is Deleted?
+a). That specific Package version and all the processes using it are romoved from Orchestrator.
+21.What is the easiest way to manage the item that were assigned to you for Review?
+a).By using the Review Request Menu.
+22.There are 3 robots in the "ABC" environment. How can the execution of a package be assigned to all 3 of them?
+a).By navigating to the Processes page to pair the package with the intended environment, and then going to Jobs, selecting the intended/targeted process, and clicking Start
+23.Which parameter are mandatory to be defined when creating a new Robot.
+a).Name
+b). Type
+24.What is a transaction?
+a).A set of arguments that was added to a Queue and has been processed by a robot
+25.How can a process that has more package versions be updated?
+a).By going to process selecting the targeted process clicking manage versions and selecting the desired option.
+26. When should the add log fields activity be used?
+a).Whwn the standard log message has to be customized by adding new fields to it.
+27.Select the charts included in the Orchestrator Dashboard:
+a).Robot 
+b).job results
+c). Transactions
+28.What happens if the status of a Transaction is not updated within 24 hours?  
+a).Its status is changed to Abandoned
+
+
+
+
+
+
+
+
+
+Posted by Programming at 3:33 AM 7 comments: 
+Email This
+BlogThis!
+Share to Twitter
+Share to Facebook
+Share to Pinterest
+TUESDAY, OCTOBER 2, 2018
+UiPath Foundation Level 1 to Final Test All MCQ(RPA UiPath)
+1. When is it recommended to use Desktop recording?
+     When you automate more steps in the same window
+2. What recording wizard would you use to automate UI interactions in an application that does not         offer support for selectors?
+    Citrix Recording
+3. How can you record the start of a Web application?
+    Hit Record - Web - Open Browser - select browser
+4. In order to make a UI selector stable you need to
+   a). Choose fixed properties.
+    b). Use Attach to Live Element
+5. How can you extract a table from a web page
+    a). By using the Data Scraping Wizard
+    b). By using the Extract Structured Data Activity.
+6. Is “Workflow2.xaml” a good name for a reusable workflow?
+     a). No
+7. Which of the following phrases are true regarding Project Organization?
+    a).Saves time for all team members
+    b). Is a constant concern of the robot developer
+8.What is the recommended layout to define business logic in a complex process automation
+    a). Flowchart
+9.As a best practice, how should workflows use a local desktop application
+   a).By checking if the corresponding process is running and if not, opening the application by using         the Open Application activity.
+  b). By using selectors to interact with the application.
+10.What activity is used to chain together multiple workflows in a single automation
+ a). Invoke workflow File Activity
+11. How can you manage passwords for an automation project
+   a). With Windows Credential Manager
+12.How can you trigger another workflow from within your current one
+a). By using the Invoke workflow File Activity
+13.Which of the following is a good example of a workflow name
+a).GetCustomerNumber.xaml
+14. What type of arguments can you use in a workflow
+a). In
+b). Out
+c). In/Out
+15.If you need to know if a UI Element is available on the screen or not, what activity should you use
+a).Element Exists
+16. Where can you see the variables’ values during workflow execution
+a). In the Locals Pane
+17. What can you use to make sure that the execution continues even if an activity fails
+a) Try/Catch Activity
+18. What happens if you put a Breakpoint on a Click activity and start the workflow in Debug mode
+a).The workflow will be paused until you click the Continue button.
+19.When running a workflow how can you see the steps the workflow is executing
+a).Using Debug with Highlight Activities option, 
+ b).Using Debug and inspecting the Output panel
+20.How many Catches can you have in a Try/Catch block?
+a) There is no limit on the number of catches.
+21. If you want to wait until a UI Element becomes available on the screen, what activity should you         use?
+a). Find Element 
+22.Which of the following properties are found in the Get Outlook Mail Messages activity
+a) MailFolder
+23.What is the output of the Save Mail Message activity
+a). It saves a.eml file
+24.If the PDF activities are not listed in your Activities Panel, how can you get them
+a). By installing them using the Manage Packages feature.
+25.We have a native PDF invoice and we need to read the amount in USD next to the label             AMOUNT. What methods can we apply to get the desired value
+
+
+a).Open the file in Acrobat Reader or any other compatible PDF reader and use Anchor Base with the label as an anchor
+b).Use the Get Text activity with a reliable selector (if available) in order to only retrieve the amount from the PDF file.
+c). By installing them using the Manage Packages feature.
+26.Will the Read PDF with OCR activity open the PDF document on the screen in order to read ita). No
+27.If you want to extract specific information from multiple native PDF files with the same structure, what activity should you use
+   a). Get Text
+28.Which of the following methods can be used for reading text from a native .pdf document
+a). Read PDF Text Activity
+b). Read PDF with OCR Activity
+29.What happens if you use the Excel Read Range activity to read a .xlsx file that is already opened
+a).It will read the document successfully.
+30.What activity should you use to read all the data from a .xlsx file
+a). Excel Read Range
+31. You have an Excel table with two columns named "PersonName" and "Age". What happens if       you use the activity Insert Column with the Column Name property set to "Age"
+a). An exception is throw.
+32. Imagine you have to use a Type Into activity in an element that loads slowly. Will it be a good idea to add some delays before executing Type Into?
+a). Yes, use On element appear and start typing only after the trigger happens.
+b). No, this solution is not reliable because sometimes the loading time can take more than the delay time.
+33.How can we make sure that an app is in a certain state in a Citrix environment?
+a)By waiting for certain UI elements to appear or disappear and making decisions based on that.
+34.How can you start an application within a Citrix environment?
+a).Double clicking the application icon on the desktop
+b).Defining a shortcut key and then triggering the app with a Send Hotkey activity
+35.What is the output of the Workbook Read Range activity?
+a). A DataTable
+36.How can you close a running application?
+
+a).By using the Close Application activity
+b).By sending Alt + F4 with the Send Hotkey activity
+c).By using the Kill Process activity
+37.How can you extract a table from a web page?
+a).By using the Data Scraping Wizard.
+b). By using the Extract Structured Data Activity.
+38.What activity should be used to allow a user to click on a UI Element after being blocked using the Click Trigger activity?a). Replay User Event
+39.Will a Click activity work with a Hidden browser session?a).Yes, if the SendWindowMessages property is selected.
+b).Yes, if the SimulateClick property is selected.
+40.What is the UiExplorer good for?a). To Make  Selectors Stable.
+41.What can you use to add more details about the process in the workflow itself?a). Adding Activity Annotations.
+b). The Comment Activity.
+42.Can you hover the mouse over a specific UI Element?a).Yes, by using Hover OCR Text activity.
+b).Yes, by using Hover Image activity.
+c).Yes, by using Hover Text activity.
+43.How can you grab text from a notepad window inside Citrix?a).By using the Get Text with OCR activity
+b).By using Screen Scraping/Relative Scraping.
+44.What happens if you send "123[k(enter)]" by using Type Into activity with the SimulateType property selected?a).It will type "123[k(enter)]".
+45. Is notifying the user via a Message Box activity a good way to keep track of a workflow’s execution     progress ?a).No
+46.What is the recommended layout to define business logic in a complex process automation?a). Flowchart
+47.What is the recommended layout for sequential activities?a). Sequence
+48.What activity is used to chain together multiple workflows in a single automation?a). Invoke workflow file activity
+49.When is it recommended to use nested If activities inside workflows?a).You should avoid using nested If activities.
+50.How should an RPA developer address runtime exceptions in the workflows?a).By logging any exception events
+b).By using automatic recovery sequences inside the Catch blocks.
+c).By using Try/Catch blocks when invoking external workflow files
+51.Which of the following phrases are true regarding Project Organization?a).Is a constant concern of the robot developer
+b).Saves time for all team members
+52.Is “Workflow2.xaml” a good name for a reusable workflow?a). No
+53.As a best practice, how should workflows use a local desktop application?a).By checking if the corresponding process is running and if not, opening the application by using the Open Application activity.
+b).By using selectors to interact with the application.
+54.How can you run the process slower in order to analyze the robot’s behavior in certain conditions?a).By setting up Breakpoints and running the workflow in Debug mode.
+b).By using Slow Step and running the workflow in Debug mode.
+55.What is recommended to have in a Catch block?a).An alternative to the approach that fails
+b).A LogMessage activity
+56.What is the most effective way to handle the click on a UI Element that is not always available?a).By placing the Click activity inside a Try/Catch block.
+57.If you need to stop the workflow until a UI Element has disappeared from the screen, what activity should you use?a).Wait Element Vanish
+58.What does the Locals panel display when you are working in Debug mode?a).The current values of your variables.
+59.The Finally block of a Try/Catch activity is executed when:a).Every time, regardless if an exception occurred or not.
+60.When running a workflow how can you see the steps the workflow is executing?a).Using Debug and inspecting the Output panel
+b).Using Debug with Highlight Activities option
+61.How can execution be paused before a particular activity? a).By using a MessageBox activity
+b).By using a breakpoint in Debug mode
+62.If you want to wait until a UI Element becomes available on the screen, what activity should you use?a). Element Exits.
+63.Which of the following activities will allow you to only retrieve unread messages?a).Get IMAP Mail Messages
+b).Get Outlook Mail Messages
+64.The Save Attachments activity can save all the attachments of an email to:a). A relative Path
+b). A absult Path
+65.Which of the following properties are found in the Get Outlook Mail Messages activity?a). MailFolder
+66.What activity can you use to send an email without entering the username and password of the email account?a). Send Outlook Mail Message
+67.The Send Outlook Mail Message activity will work without having Microsoft Outlook installed:a). FALSE
+68.If you are using the For Each activity to loop through a list of MailMessage variables, what should you set the TypeArgument property to?a).System.Net.Mail.MailMessage
+69.How can you send an image inside a MailMessage?a).You can add the path to the attachment directly in the send activity.
+b).You can specify the relative path of the image in the Attachments property.
+70.What activity allows you to customize the name of the sender when you are sending an email?a).Send SMTP Mail Message
+b).Send Exchange Mail Message
+71.Will The Get Outlook Mail Message activity delete the emails from the account after it reads them?a). No
+72. Which Visual Basic property within the MailMessage class will you use to get the Date of an email?a).Headers(“Date”)
+73.Which of the following statements regarding the Read PDF with OCR activity are true?a).It allows you to specify the range of pages to be read
+b).It can use different OCR engines (Microsoft, Google)
+c).It works with native .pdf files
+74.Which of the following activities requires the PDF file to be opened with Acrobat Reader in order to read it?a). Get Text
+75.If you want to extract specific information from multiple native PDF files with the same structure, what activity should you use?a).By installing them using the Manage Packages feature.
+b).Get Text
+76.How can a robot read only the first page of a PDF file, using the PDF activities?a).Set the Range property to: “1”
+77.What activity should you use to extract all the text from the PDF file?a).Read PDF Text
+b).Read PDF with OCR
+78.How can you specify the location of a PDF file?a).As a full path to the PDF
+b).As a Relative Path
+79.What is the easiest way to get the invoice number from a native PDF file? a).Open the PDF with Acrobat and scrape only relevant information
+80.The Read PDF with OCR activity will throw an error if the following is not specified:a).The OCR Engine that is to be used.
+b).The FileName property.
+81.What should you use if you want to get the value of a specific cell from a row in a datatable?a). Get Row Item.
+82.What happens if you use a Read Range activity with the Range property set to “” (an empty string)?a).Reads all the information from the specified sheet
+83.What activity should you use if you want to add data to an existing .xlsx document?a).Excel Append Range
+b).Workbook Append Range
+84.What happens if you try to use a Write Range activity to a .xlsx file that does not exist?a).It will create that file for you and write the data in it.
+85.If you need to sort a table from an .xlsx file, what should you use?a). An excel Sort Table Activity.
+86.What activity you should use if you want to calculate a sum into a cell using Excel formulas?a).Excel Write Cell
+87.What activity should you use to read all the data from a .xlsx file?a). Excel Raed Range
+88.In order to loop through all the rows of a datatable, which activity should be used?a). For Each Row
+89.Which of the following activities can be used to select an item in drop down list, in Citrix? a) Click OCR Text
+b). Click Image
+90.How can the robot pass a variable argument when opening an application in Citrix (eg: a web address for a browser)?a).In the command prompt, type in the path to the application and the argument
+91.How do you reset a clipping region?a).With a Set Clipping Region activity
+92.What does the Find Image activity return?a). An UI Element object.
+93.How can we make sure that an app is in a certain state in a Citrix environment?a).By waiting for certain UI elements to appear or disappear and making decisions based on that.
+94.What is the EASIEST navigation method to be used in a form within Citrix?a).By sending keyboard commands/hotkeys
+95. Can a Pick Branch activity be used alone?a).No, it can only be added inside a Pick activity body.
+96.If a Click Image activity was created with an image of an icon, and meanwhile that icon becomes highlighted, will the activity still work?a).Yes, if the clipping region avoids the background of the icon.
+b).No, if the accuracy is too high.
+97.What happens if Find Image doesn’t actually find the desired image?a). An Exception is Throw.
+98.What can be done when the Windows Remote Connection doesn’t allow sending hotkeys?a).It should work if the Windows Remote Connection is in ‘full-screen’ mode.
+99.Having an app in a Citrix environment with multiple text-boxes that look the same (size/style), how can you identify one of them to type into?a).By clicking relative to an unique text/image next to the textbox
+b).You can’t identify it if it doesn’t have something unique next to it (text/image).
+100.What method would be more reliable when clicking on a specific text label in an application running in a Citrix environment, given the fact that its font size might be easily changed?
+a).Usig the Click OCR text Activity
+101.What method do you need to use to extract the text font and color when automating in a Critrix Environment?
+a).It's impossible to retrieve the text color from a Citrix environment
+102.Is Reset Clipping Region mandatory to be executed at the end of a scrape relative sequence?
+a).Yes, because Clipping Region is a shared resource.
+103.Is it possible to click a button with Click Image Activity if the target is not visible on the screen?
+a).No, you could click a button which is not visible only using selectors
+104.How can you improve accuracy when scraping with OCR a region that contains only digits?
+a).Use Google OCR with “Numbers Only”
+105.Consider having an application in Citrix Environment that has a button named ‘Accept’ and also a label that contains the Accept word. How can Click Text be customized in order to access the correct button?
+a).By using the Occurrences Property.
+106.Click Image and Click Text are not 100% reliable in Citrix environments. What method can be used instead (when applicable) to have safer actions?
+a).Setting focus on a reliable element and then navigating around the app using keyboard (up/down arrows, tab, etc) or using keyboard shortcuts
+107.Can you use image/text automation outside of an Citrix enviroment?
+a).TRUE
+108.Can you store a Selector in a variable?
+a). Yes of the type String
+109.Can the robot perform clicks alongside key modifiers (Shift, Ctrl etc) in a Citrix environment?
+a). YES
+110.How can you see the full list of attributes of Ui elements?
+a). By using the UiExplorer Tool
+111. Which of the following statements are true regarding the Find Element activity?
+a).It returns the found element in a variable for later use
+b).It throws an exception if it doesn’t find the element on screen
+112.This is a reliable selector for a dynamic page: "webctrl idx='144' tag='IMG'/"
+a). FALSE
+113.What are the supported wildcard characters for selectors in UiPath Studio?
+a) ?
+b) *
+114.What is UiExplorer used for? 
+a).To create and fine tune selectors
+b).To explore the UI tree
+115.Can a valid selector identify different elements on the screen at the same time
+a). No.
+116.How many characters does "*" replace?
+a). Zero or More
+117.What is the slowest method of reading text?
+a). OCR
+118. The most important advantages of the FullText method are:
+a). It work in the background
+b). it is Fast
+c). it is Occurate
+119.What text extraction method can you use to get text position?
+a). Native
+b). OCR
+120. What property should you use to make sure that the workflow continues even if an activity fails? 
+a). ContinueOnError Property
+121.What defines the amount of time in which the UI target of an activity must be found?
+a).The TimeoutMS property
+122.How do you avoid mistaking the currently opened window with another similar one?
+a).By working inside a container.
+123.A UI Element target can be composed of (if it does not use a UiElement variable):
+a). Selector
+124.What is Attach Window used for?
+a).Identifying the window you are working with.
+125.By using the Full Text scraping method, the robot is able to:
+a). Get Hidden Information
+b). Get Editable Text
+126.How do you enable the (Clipping) Region selection mode when Screen Scraping?
+a). By Pressing F3
+127.What type of container will Web Recording generate?
+a). Attach Browser
+128.What actions can you record using Automatic Recording?
+a). Type Into
+b). Click
+129.How can you record the start of a Web application?
+a).Hit Record - Web - Open Browser - select browser
+130.What is the difference between Desktop recording and Basic recording?
+a).Desktop recording generates containers
+b).Basic recorder generates full selectors
+130.What type of container will Basic Recording generate?
+a). No Container
+131.How do you stop the recording?
+a). Escape or Right Click
+132.Can you combine automatic recording with step-by-step recording in the same recording sequence?a). YES
+133.What recording profiles are available in UiPath Studio
+a). Basic
+b). Desktop
+c). Web
+d). Citrix
+134.What recording wizard would you use to automate Virtual Machine actions? 
+a). Citrix Recording
+135.What activities can be used to iterate through an Array
+a) For Each
+b).While
+136.How can you identify a column in a data table?
+a). Using The column Index
+b). Using the Column Name
+137.What activity can be used to modify the value of an existing cell in a DataTable
+a). Assign Activity
+138.How can we test if a given address (a string variable called fullAddress) can be found on a particular street (a string variable called streetName)?a).fullAddress.Contains(streetName)
+139. What activity can be used to loop through each row from a DataTable?
+a). For Each Row
+140. What activity can you use to get the value from a certain cell, from a specific data table row
+a). Get Row Item
+141.How can the index integer variable be displayed inside a Message Box activity
+a).“Current index is: “ + index.ToString
+142.Which of the following data types are included in the Collections category?
+a). Dictionary
+b). List
+143.If the dtNewHires datatable has 4 columns, in this order : [ID, Name, Age, Sex] and 2 rows: [1, Daniel, 38, M] ; [2, Andra, 24, F], what is the result of the expression dtNewHires.Rows(0)(1)?
+a).Daniel
+144. What activity should you use to select one choice from multiple choices, based on the value of a given expression?
+a).Switch Activity
+145.What data types can be stored inside an array?
+a). Integer
+b). String
+146.Can you insert a Flowchart activity in a Sequence
+a). Yes
+147.Which activities allow you to iterate through an array of strings?
+a). while
+b). For Each
+c). Do While
+148.Which activity can you use if you want to loop through a collection of items?
+a).For Each activity
+149.What happens if you rename a variable from the Variables tab?
+a).The name will be automatically updated in all the activities that use it.
+150.What type of argument can you define to retrieve data from an invoked workflow
+a). Out.
+151.In which types of variable can you store text?
+a). String
+b). Generic
+152.When having multiple activities executing in a fixed sequential order, what kind of workflow should you use?
+a). Sequence
+153.You can insert a Sequence activity in a Flowchart activity.
+a). TRUE
+154.Where should you store login details in a safely manner
+a).In UiPath Orchestrator
+b).In the Windows Credentials Manager
+155.Which of the following is the IDE used to develop the UiPath workflows?
+a).UiPath Studio
+156. The Orchestrator can:
+a)Remotely control robots
+b).Send Start commands to multiple robots
+c).Schedule robots to perform specific processes
+167.What are Queues used for?
+a).Distribute transactional load among multiple robots
+168.What is UiPath Explorer used for?
+a).To get detailed information in regard to UI elements
+169.How can you extract structured data from a web page?
+a).Using the Data Scraping Wizard
+170.Where can you see the list of activities that you can use in a workflow?
+a).In the Activities panel
+171.What kind of actions can be performed in the Variables panel?
+a).Setting default values for variable
+b).Changing variable type
+c).Adding new variable
+172.Getting the content of a PDF document is possible:
+a).By opening the pdf and using screen scraping to get its data
+b).By using the read Pdf text activity and providing the pdf file’s path
+173.The Type Into activity can receive inputs like:
+a).A variable followed by .tostring method
+b). A static String
+174. Generic Variable are:
+a). Text
+b). Number
+c). Date
+d). Boolean
+175. Which of the following statements is true regarding Lists and Arrays?
+a). List  items can be added using an Add to Collection activity.
+b).  You can iterate through a List using a For Each loop activity
+c). Array and List elements can be accessed by index.
+176. Will a Click activity work with a Hidden browser session?a)Yes, if the SimulateClick property is selected
+b).Yes, if the SendWindowMessages property is selected.
+177. What activity can you use to read an entire sheet from an excel file?a). Read Range
+178. How can we make sure that an app is in a certain state in a Citrix environment?a). By waiting for certain UI elements to appear or disappear and making decisions based on that
+179. Where can you see the activities that make up a workflow?a). In the Workspace pane
+b). In the Outline pane
+180. How can you fine tune a selector?a). Replacing variable attribute parts with *
+181.What should you use to scrape tables from a web page?a). Data Scarping
+182. Which of the following activities can you use to extract text from a hidden browser?a). Extract Structured Data
+b). Get Full Text
+c). Get Text
+183.What is a wildcard used for?a).To replace variable values in selector attributes
+184.Which of the scraping methods can get you the hidden text in the element?a). FullText
+185.As a best practice, how should workflows use a local desktop application?a).By using selectors to interact with the application.
+b).By checking if the corresponding process is running and if not, opening the application by using the Open Application activity.
+c). By opening the application using the Click Image activity on the application’s desktop shortcut.
+186.How can you install and update activity packs?a).Using Manage Packages within Activities Pane
+187.What type of argument can you define to pass data and retrieve the modified value from an invoked workflow?a). In/Out
+189.How can we test if a given address (a string variable called fullAddress) can be found on a particular street (a string variable called streetName)?
+a).fullAddress.Contains(streetName)
+190.What activity allows you to customize the name of the sender when you are sending an email?a). Send Exchange Mail Message
+b).Send SMTP Mail Message
+191.What should you use to click in a hidden IE browser?a). SimulateClick
+192. What is TimeoutMS property used for?a). To define the amount of time during which the target of an activity must be found
+193.If the PDF activities are not listed in your Activities Panel, how can you get them?a). By installing them using the Manage Packages feature.
+194.What kind of actions can be performed in the Variables panel?a).Setting default values for variables
+b).Adding new variables
+c). Changing variable types
+195. What happens if you use the Write Range activity with the Range property set to “” to write a datatable to an excel file that already contains data?a). It will append the new data to the existing data.
+196. What is a sequence most suitable for?a).Short and simple workflows
+b).Pieces of automation that can be used in a larger project
+197. what is an argument?
+a).An input/output parameter of the workflow
+198.Which of the scraping methods can get you the hidden text in the element?a). FullText
+199.If you scrape some text and you know it contains only digits, how can you make the scrape better?a). Use Google OCR with the “Numbers Only” option
+200. Is it possible to make an image automation if you are not in a Citrix environment?a). Yes, but should be used as last resort
+201. Which of the following activities can you use to extract text from a hidden browser?a). Get FullText
+b). Get Text
+202. Which of the following input methods works in background?a).Window Messages
+b). Simulate Type/Click
+203.There is an input field with the text “abc”. If you use the Type activity with the text “123” and the following Properties: SimulateType checked, EmptyField unchecked, what will be the text in the field?a). 123
+204. A Click Trigger has the EventType = EVENT_SYNCHRONOUS. The activities in the Event Handler are executed before the click is sent to the applicationa). TRUE
+205. What kind of workflow should you create to define business rules?a). Sequence
+b). Flowchart
+206. How should you organize your workflow?a). Use Flowchart or State Machine for a high level organization
+207.How can you extract text from a Citrix application?a). Using Microsoft OCR
+208. How can you automate a Citrix application?a). Using Image
+b). Using Text
+c). Using the Keyboard
+209.How can you find all anchor elements in a web page?a). Using the Find Children activity
+210.When is it recommended to use containers?a).When performing multiple operations in the same window
+211.How can you filter records from a DataTable based on a condition?a). Checking the condition in a For Each Row loop
+b). Using the 'Select' method
+212.What happens if the AddHeaders property is checked for the Read Range Activity?a).The first row from the specified range is considered to be the column header
+213.What should you use to check if a checkbox is selected or cleared?a).Get Attribute activity
+214.What is a wildcard used for?a). To replace variable values in selector attributes
+215.How does UiPath recognize elements on screen?a).Using attributes of the UI elements
+216.What is the Attach Window activity used for?a).To specify the top-level window container you will be working with
+217.How can UiPath identify an UI element on the screen?a).By using a full selector
+b).By using a partial selector inside a container
+c).By using a reference of it, previously saved in a variable
+218.How can you fine tune a selector?a).Adding all parents
+b).Replacing variable attribute parts with *
+219.Which recording profile generates full selectors?a).Basic recording
+220.Which activities can be used to interact with the user?a). Input Dailog
+b).. Message Box
+221.What is the technique used to indicate an item from a popup menu that disappears on click?a).Delayed selection
+222.When should you use the Flowchart workflow?a).When modelling a process that has loops to previous states
+b).When having a process with many decision blocks
+223.How can you install and update activity packs?a).Using Manage Packages within Activities Pane
+224.Where can you find the value written by the Write Line activity?a).In the Output pane
+225 Where can you see the activities that make up a workflow.a).In the Workspace pane
+b).In the Outline pane	By using Screen Scraping/Relative Scraping.	
+By using the Get Text with OCR activity
+
+
+Posted by Programming at 4:52 AM 16 comments: 
+Email This
+BlogThis!
+Share to Twitter
+Share to Facebook
+Share to Pinterest
+Home
+Subscribe to: Posts (Atom)
+ABOUT ME
+Programming
+View my complete profile
+BLOG ARCHIVE
+?  2018 (2)
+?  October (2)
+Orchestrator Level 2 MCQ (UiPath)
+UiPath Foundation Level 1 to Final Test All MCQ(RP...
+Picture Window theme. Powered by Blogger.

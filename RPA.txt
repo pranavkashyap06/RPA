@@ -1,0 +1,76 @@
+RPA:
+
+How to get the selected file from the selected folder:
+
+Choose the selected folder from the activities.
+then take a assign value called as FileList.
+where FileList= Directory.getfiles(Selectedfolder output)
+
+and from there we can use for each loop taking all files one by one.
+
+How to create a random number:
+new Random().Next(1,1000)
+
+Adding two Strings together is called concatenation. For example, when we concatenate “cat”+”dog”,
+ the result is “catdog”. The same happens when two GenericValue variables are added together. 
+For instance, “123”+123 becomes “123123” with string concatenation, but 123+“123” becomes 246 with regular integer addition.
+
+
+How to initialize a list or dictionary default functions.
+new List(of string) from {"",""}
+
+How to use the split  keyword :
+text.split(""c) and while calling text(3)
+
+How to select a given column from the table:
+Name.Select("[Club Member]='Yes'") --this will check the column club member whether it has yes in its row
+
+ Dim fullName = "Juan Perez"
+ Dim name = fullName.Substring(0, fullName.IndexOf(" "))--to split the First name
+ Dim lastName = fullName.Substring(fullName.IndexOf(" ") + 1)--to split the last name
+
+rowIndex= inputsTable.Rows.IndexOf(row)+1--to get the position from the data table where inputTable is the datatable and rows is the row of datatable.
+cint(row(Column name))- Convert the value into integer.
+
+If you want to get only filtered MailMessage variables, what activity should you use?--Get Outlook mail messages
+What is the output of the Save Mail Message activity?--It saves a .eml file.
+What activity allows you to customize the name of the sender when you are sending an email?--- Send SMTP Mail Message
+
+- Send Exchange Mail Message
+
+What is the supported variable type in the Output property field of all Get Mail activities (POP3, IMAP, Outlook, Exchange)?---List (MailMessage)
+
+Which of the following activities will allow you to retrieve only unread messages?--- Get Outlook Mail Messages
+- Get IMAP Mail Messages
+
+Where can you see the variables' values during workflow execution?--In the Locals pane
+
+What is the most effective way to handle the click on a UI Element that is not always available?--By placing the Click activity inside a Try/Catch block.
+
+Which of the following is a good example of a workflow name?
+GetCostumerNumber.xaml
+How can you extract data from an invoked workflow?--- By using Out arguments.--By using In/Out arguments.
+
+Can you insert a Flowchart activity in a Sequence activity?-Yes
+
+What would you use to exit from a For Each activity and continue the execution of the workflow-
+
+Arguments, resembling variables, are used to pass data from one workflow to another. They can store data dynamically and pass it on. One difference between variable and argument is that variables pass data to other activities while arguments pass data to other workflows.
+
+
+
+
+Orchestrator:-
+
+For connecting to orchestrator we need to publish first and then create robot which will performe the operation. 
+then Create an environment which will club if we want to add more robot for the same process if not then single can also work.
+Then create a package with the use of the environment and lastly create Job and schdule if you want.
+
+
+
+new system.Net.NetworkCredential(string.Empty,password).Password-------------How to convert the password from Orchestrator to normal variable here password is the variable which we used to store from Orchestrator.
+
+Not string.IsNullOrEmpty---The string is not null or empty
+
+
+ClientInformation.substring(ClientInformation.indexof("ClientId:")+"ClientID".length).split(Environment.newline.Tochararray)(0)
